@@ -1,0 +1,16 @@
+sequenceDiagram
+
+participant browser
+participant server
+
+browser->>server: POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
+activate server
+deactivate server
+Note right of browser: Javascript runs preventDefault() to stop redirecting response
+Note right of browser: Data is sent to the server as JSON and rendered on the browser by appending it to the list using Javascript functions
+
+
+
+
+
+
